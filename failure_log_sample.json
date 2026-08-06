@@ -1,0 +1,26 @@
+[
+  {
+    "id": "anon_001",
+    "input": "初回のデモが動かなかった",
+    "phi_score": 1.618,
+    "history_len": 0,
+    "tags": ["demo", "startup"],
+    "anonymous": true
+  },
+  {
+    "id": "anon_002",
+    "input": "ユーザーテストで悪い評価を受けた",
+    "phi_score": 2.236,
+    "history_len": 1,
+    "tags": ["feedback", "iteration"],
+    "anonymous": true
+  },
+  {
+    "id": "anon_003",
+    "input": "コードが動かないのに理論だけ先に出した",
+    "phi_score": 1.732,
+    "history_len": 2,
+    "tags": ["theory-practice-gap"],
+    "anonymous": true
+  }
+]
