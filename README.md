@@ -17,13 +17,23 @@ pip install -r requirements.txt
 python CoPheliaEngine.py
 ```
 
-Or open the Colab-ready pattern (copy the engine into a notebook and run):
+Or open the Colab-ready pattern:
 
 ```python
 from CoPheliaEngine import CoPheliaEngine
 engine = CoPheliaEngine()
 print(engine.process_failure("私の失敗作", ["過去1", "過去2"]))
 ```
+
+## Golden-Spiral Demo (visual resonance)
+
+```bash
+# from repo root
+jupyter notebook notebooks/golden_spiral_demo.ipynb
+```
+
+失敗テキストを黄金螺旋にマッピングし、φ摂動で軌跡がわずかに歪む様子を可視化します。  
+ダーク宇宙パレット（#050B26 / #C0163C / #F4C95D）で観察者の目を引きます。
 
 ## Core Idea
 
@@ -36,25 +46,26 @@ print(engine.process_failure("私の失敗作", ["過去1", "過去2"]))
 
 | File | Purpose |
 |------|--------|
-| `CoPheliaEngine.py` | Minimal runnable core |
-| `requirements.txt` | numpy + scipy only |
+| `CoPheliaEngine.py` | Minimal runnable core (φ-perturbation + process_failure) |
+| `notebooks/golden_spiral_demo.ipynb` | Reproducible visual demo — failure → golden spiral |
+| `requirements.txt` | numpy + scipy only (core) |
 | `failure_log_sample.json` | RadicanTrust™ anonymous schema example |
 | `CONTRIBUTING.md` | How to PR your failure logs & modules |
 
 ## KPI / Roadmap (Seed-Packet → Sprout)
 
 - [x] Minimal engine + sample log
-- [ ] Golden-Spiral visual demo notebook
+- [x] Golden-Spiral visual demo notebook
 - [ ] Docker / Colab one-click
 - [ ] NeurIPS / CHI / SIGGRAPH creativity tracks
-- Target: 300+ stars → Hackathon wave + Open Collective support
+- Target: ★1,000 in 3 months → Hackathon wave + Open Collective support
 
 ## Temperature Handling (who gets what)
 
 - **AI theory researchers** → φ-matrix + PT symmetry notes
-- **HCI / Creativity** → experiment data + GIF demos
+- **HCI / Creativity** → experiment data + GIF / notebook demos
 - **Art curators** → 528 Hz / holographic experience hooks
-- **Industry / VCs** → failure	o asset logs + retention KPIs
+- **Industry / VCs** → failure→asset logs + retention KPIs
 
 ## License
 
